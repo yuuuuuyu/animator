@@ -25,8 +25,10 @@
     </ul>
 
     <div class="nav-container__footer flex-row">
-      <el-button class="flex-1" type="primary">文档</el-button>
-      <el-button>
+      <el-button class="flex-1" type="primary" @click="go('doc')"
+        >文档</el-button
+      >
+      <el-button @click="go('github')">
         <svg
           height="16"
           viewBox="0 0 16 16"
@@ -59,6 +61,17 @@ export default {
     return {
       menu: routes[0].children,
     }
+  },
+  methods: {
+    go(type) {
+      type === "github" &&
+        window.open("https://github.com/yuuuuuyu/animator.git", "_blank")
+      type === "doc" &&
+        window.open(
+          "https://github.com/yuuuuuyu/animator/blob/master/README.md",
+          "_blank"
+        )
+    },
   },
 }
 </script>
