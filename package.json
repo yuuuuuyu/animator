@@ -1,0 +1,35 @@
+{
+    "name": "@beeboat/animator",
+    "version": "1.0.9",
+    "description": "",
+    "main": "dist/index.common.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yuuuuuyu/animator.git"
+    },
+    "author": "15684187702@163.com",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/yuuuuuyu/animator/issues"
+    },
+    "homepage": "https://github.com/yuuuuuyu/animator#readme",
+    "private": false,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build:app": "vue-cli-service build",
+        "build": "vue-cli-service build --target lib --dest dist --name index ./lib/animator.js"
+    },
+    "dependencies": {
+        "animate.css": "^4.1.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^4.5.13",
+        "@vue/cli-service": "^4.5.6",
+        "babel-eslint": "^10.1.0",
+        "core-js": "^3.13.1",
+        "vue-template-compiler": "^2.6.12",
+        "element-ui": "^2.15.6",
+        "vue": "^2.6.14",
+        "vue-router": "^3.5.2"
+    }
+}
